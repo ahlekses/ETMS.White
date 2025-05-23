@@ -10,23 +10,28 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/recharts": "^1.8.29",
     "axios": "^1.6.2",
+    "chart.js": "^4.4.9",
+    "class-variance-authority": "^0.7.1",
+    "classnames": "^2.5.1",
+    "clsx": "^2.1.1",
     "jwt-decode": "^4.0.0",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
+    "react-chartjs-2": "^5.3.0",
     "react-dnd": "^16.0.1",
     "react-dnd-html5-backend": "^16.0.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.22.3",
     "react-toastify": "^10.0.4",
-
-    "recharts": "^2.10.3"
-
-    "classnames": "^2.5.1",
-    "@types/recharts": "^1.8.29"
-
+    "recharts": "^2.10.3",
+    "tailwind-merge": "^3.3.0",
+    "tailwindcss-animate": "^1.0.7"
+  },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
+    "@types/node": "^22.15.21",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",

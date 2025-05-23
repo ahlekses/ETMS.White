@@ -239,11 +239,19 @@ const SurveyBuilder: React.FC = () => {
       toast.error('All questions must have text');
       return;
     }
-
+    const normalizedQuestions = questions.map(q => ({
+      ...q,
+      options: Array.isArray(q.options)
+        ? q.options.map(opt => String(opt).trim())
+        : null,
+    }));
+    
     // Validate all options have text
-    const invalidOptions = questions.some(q => 
-      q.options && q.options.some(opt => !opt.trim())
+    const invalidOptions = normalizedQuestions.some(q =>
+      q.options?.some(opt => opt === '')
     );
+    
+
     if (invalidOptions) {
       toast.error('All options must have text');
       return;

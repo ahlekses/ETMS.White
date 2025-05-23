@@ -72,7 +72,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
      "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.getenv("DB_NAME", "etms1"),  # Use default if env var is missing
+        "NAME": os.getenv("DB_NAME", "etms"),  # Use default if env var is missing
         "USER": os.getenv("DB_USER", "postgres"),
         "PASSWORD": os.getenv("DB_PASSWORD", "1234"),
         "HOST": os.getenv("DB_HOST", "localhost"),
